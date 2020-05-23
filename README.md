@@ -9,6 +9,6 @@
 
 
 ### URL
-https://github.com/NanaTerada/website-yogasutadio.git
+https://github.com/NanaTerada/website_myportfolio.git
 
 ### メモ
