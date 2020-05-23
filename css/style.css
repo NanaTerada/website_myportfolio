@@ -53,13 +53,18 @@ header a {
 
 }
 
-.site-title {
+.title {
     width: 330px;
     position: absolute;
     top:10px;
     right: 10px;
     background: #fff;
     animation: fadein-title 3s ease-in;
+    text-align: center;
+}
+
+.title span {
+    font-size: 10px;
 }
 
 @keyframes fadein-title {
@@ -88,13 +93,59 @@ header a {
 
 }
 
+
 #work {
     background: #ddd;
 
 }
 
+.section-work-inner {
+    width: 980px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.site-title {
+    text-align: left;
+
+}
+
+.sec-title {
+    padding: 30px;
+}
+
+
 #blog {
     background: #aaa;
+}
+
+.section-blog-inner {
+    width: 980px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.blog-2col-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width:760px ;
+}
+
+.blog-card {
+    width: 370px;
+    background: #ddd;
+}
+
+.article-aside-wrapper {
+    display: flex;
+}
+
+
+.sidebar {
+    width: 200px;
+    background: crimson;
 }
 
 footer {
