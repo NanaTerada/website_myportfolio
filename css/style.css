@@ -23,10 +23,29 @@ img {
     width: 100%;
 }
 
-
 header {
+    position: relative;
+    
+}
+
+
+header nav {
     background: #333;
     //display: none;
+    position: fixed;
+    top:0px;
+    left: 0;
+    z-index: 10;
+    width:100%;
+    opacity: 0.5;
+}
+
+header nav:hover {
+    opacity: 1;
+}
+
+header nav li a:hover{
+    color: #ebdc62;
 }
 
 header a {
@@ -35,11 +54,13 @@ header a {
 
 #top {
     background: #ccc;
-
+    /* position:absolute;
+    top:0;
+    left: 0;
+    width: 100%; */
 }
 
 .section-top-inner {
-    position: relative;
     animation: fadein 1.2s ease-in;
 }
 

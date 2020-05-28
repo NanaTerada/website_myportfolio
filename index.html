@@ -6,10 +6,11 @@
         <title>タイトル</title>
         <link rel="stylesheet" href="normalize.css">
         <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
         
-        <header>
+        <header class="parent">
             <nav>
                 <ul>
                     <li><a href="#top">top</a></li>
@@ -21,17 +22,21 @@
 
             <!-- nav 最初　非表示でスクロールしたら表示 -->
 
-        </header>
-            <main>
-                <section id="top">
-                    <div class="section-top-inner">
-                        <h1 class="title">WIP<span>__work in progress</span></h1>
 
-                        <div class="img-wapper"><img src="images/img-top.jpg"></div>
-                        <div>キャッチコピーてきな一言</div>
-                    </div>
-                </section>
-                <!-- スマホでみたときに画面いっぱいになるような縦長の画像を背景にする -->
+            <section id="top">
+
+
+
+                <div class="section-top-inner">
+                    <h1 class="title">WIP<span>__work in progress</span></h1>
+
+                    <div class="img-wapper children"><img src="images/img-top.jpg"></div>
+                    <div>キャッチコピーてきな一言</div>
+                </div>
+            </section>
+
+        </header>
+                
 
                 <section id="about">
                         <div class="section-about-inner">
@@ -43,6 +48,7 @@
                 </section>
 
                 <!-- ここまで背景一緒 　背景アタッチメントで文字だけスクロールされる　↓からは別背景-->
+            <main>
 
 
                 <section id="work">
@@ -117,6 +123,14 @@
 
             <small>©️1990 Co.,Ltd. All Rights Reserved.</small>
         </footer>
+
+        <script>
+            $(function(){
+                // var h = $('.children').height(); 
+                //         $('.parent').height(h); 
+                //         alert(h);//高さ確認用アラート 
+            });
+        </script>
         
     </body>
 </html>
