@@ -3,6 +3,7 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name=”viewport” content=”width=device-width,initial-scale=1.0″>
         <title>タイトル</title>
         <link rel="stylesheet" href="normalize.css">
         <link rel="stylesheet" href="css/style.css">
@@ -62,10 +63,10 @@
                         <div class="section-work-inner">
                           <h2 class="sec-title">WORK</h2>
                           <h3 class="site-title"><a href=""></a>サイトタイトル</a></h3>
-                        <div class="work-img-wrapper"><a href=""><img src="" width="800px" height="500px"></a></div>
+                        <div class="work-img-wrapper"><a href="#"><img src="images/img-top.jpg"></a></div>
                         
                         <h3 class="site-title">サイトタイトル</h3>
-                        <div><img src="" width="800px" height="500px"></div>
+                        <div class="work-img-wrapper"><img src="images/img-top.jpg"></div>
                         
                         </div>
                    
@@ -79,7 +80,7 @@
                                     <div class="blog-2col-wrapper">
                                             <article class="blog-card">
                                                 <a href="#">
-                                                <div ><img src="" width="350px" height="234px"></div>
+                                                <div class="blog-img-wrapper"><img src="images/img-top.jpg" ></div>
                                                 <p class="blog-date">2020/00/00</p>
                                                 <h3 class="blog-title">ブログタイトル</h3>
                                                 <p class="blog-txt">ブログの冒頭ブログの冒頭ブログの冒頭ブログの冒頭ブログの冒頭</p>
@@ -88,7 +89,7 @@
         
                                             <article class="blog-card">
                                                     <a href="#">
-                                                    <div ><img src="" width="350px" height="234px"></div>
+                                                    <div class="blog-img-wrapper"><img src=""></div>
                                                     <p class="blog-date">2020/00/00</p>
                                                     <h3 class="blog-title">ブログタイトル</h3>
                                                     <p class="blog-txt">ブログの冒頭ブログの冒頭ブログの冒頭ブログの冒頭ブログの冒頭</p>
@@ -97,7 +98,7 @@
         
                                             <article class="blog-card">
                                                         <a href="#">
-                                                        <div ><img src="" width="350px" height="234px"></div>
+                                                        <div class="blog-img-wrapper"><img src="" ></div>
                                                         <p class="blog-date">2020/00/00</p>
                                                         <h3 class="blog-title">ブログタイトル</h3>
                                                         <p class="blog-txt">ブログの冒頭ブログの冒頭ブログの冒頭ブログの冒頭ブログの冒頭</p>
@@ -106,7 +107,7 @@
         
                                             <article class="blog-card">
                                                     <a href="#">
-                                                    <div ><img src="" width="350px" height="234px"></div>
+                                                    <div class="blog-img-wrapper"><img src="" ></div>
                                                     <p class="blog-date">2020/00/00</p>
                                                     <h3 class="blog-title">ブログタイトル</h3>
                                                     <p class="blog-txt">ブログの冒頭ブログの冒頭ブログの冒頭ブログの冒頭ブログの冒頭</p>
@@ -115,7 +116,7 @@
         
                                     </div>
         
-                                    <aside class="sidebar"> 
+                                    <aside class="toppage-sidebar sidebar"> 
                                         カテゴリ
         
                                     </aside>
@@ -148,16 +149,22 @@
 
                 var windowWidth = $(window).width();
 
+                $(window).resize(function (){
+                    windowWidth = $(window).width();
+                    alert(windowWidth);
+                });
+
                 
 
 
                 $(window).scroll(function () {
+                    console.log(windowWidth)
 
                     var scroll = $(this).scrollTop();
                     var height =$(this).height();
 
                     console.log(scroll);
-                    console.log(height);
+                    // console.log(height);
 
                     if (scroll >= height) {
                     $('header nav').css('top','0px');
@@ -174,9 +181,10 @@
                 }
 
                 if (pos2 + scroll > windowWidth) {
-                    $('#tag2').css('right',pos2   - windowWidth + scroll /3);
+                    $('#tag2').css('right',(pos2 - windowWidth + scroll) /3);
+                    console.log((pos2 - windowWidth + scroll) /3);
                 } else {
-                    $('#tag2').css('right',pos2 + scroll /3);
+                    $('#tag2').css('right',(pos2 + scroll) /3);
                 }
 
                 // if (pos3 + scroll > windowWidth) {

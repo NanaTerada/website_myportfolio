@@ -110,7 +110,7 @@ header a {
 
 
 #about {
-    background: #333;
+    background: #eee;
 }
 
 .section-about-inner {
@@ -153,6 +153,13 @@ header a {
     text-align: center;
 }
 
+.work-img-wrapper {
+    width: 90%;
+    height: 500px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
 .site-title {
     text-align: left;
 
@@ -186,6 +193,13 @@ header a {
     width: 370px;
     background: #ddd;
     margin:0 10px 10px 0;
+}
+
+.blog-img-wrapper {
+    width: 350px;
+    height: 243px;
+    overflow: hidden;
+    margin: 0 auto;
 }
 
 .blog-date {
@@ -228,3 +242,35 @@ footer {
     clip-path: circle(40%);
 }
 
+
+
+@media screen and (max-width: 980px) { 
+    body {
+        color:#ebdc62;
+    }
+
+    .section-work-inner {
+        width: 90%;
+    }
+
+    .section-blog-inner {
+        width: 90%;
+    
+}
+
+
+.blog-2col-wrapper {
+    width:750px ;
+}
+
+
+
+
+}
+
+@media screen and (max-width: 750px) {
+
+.toppage-sidebar {
+        display: none;
+    }
+}
