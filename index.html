@@ -23,28 +23,35 @@
             <!-- nav 最初　非表示でスクロールしたら表示 -->
 
 
-            <section id="top">
-
-
-
-                <div class="section-top-inner">
-                    <h1 class="title">WIP<span>__work in progress</span></h1>
-
-                    <div class="img-wapper"><img src="images/img-top.jpg"></div>
-                    <div>キャッチコピーてきな一言</div>
-                </div>
-            </section>
+            
 
         </header>
+
+                <section id="top">
+
+
+
+                    <div class="section-top-inner">
+                        <h1 class="title">WIP<span>__work in progress</span></h1>
+
+                        <div class="img-wapper"><img src="images/img-top.jpg"></div>
+                        <div>キャッチコピーてきな一言</div>
+                    </div>
+                </section>
                 
 
                 <section id="about">
                         <div class="section-about-inner">
-                            <p>このサイトの説明あばうとあばうとあばうとあばうとあばうとあばうと</p>
-                            <p>あばうとあばうとあばうとあばうとあばうとあばうと</p>
-                            <p>あばうとあばうとあばうとあばうとあばうとあばうと</p>
-                            <p>あばうとあばうとあばうとあばうとあばうとあばうと</p>
+
+                            <div id="tag1" class="tag">＃プロフ</div>
+                            <div id="tag2" class="tag">＃プログラミング</div>
+                            <div id="tag3" class="tag">＃花</div>
+                            <div id="tag4" class="tag">＃鳥</div>
+                            <div id="tag5" class="tag">＃鹿児島</div>
+                            <div id="tag6" class="tag">＃アニメ</div>
+                            <div id="tag7" class="tag">＃このサイトについて</div>
                         </div>
+                        <!-- section-about-inner -->
                 </section>
 
                 <!-- ここまで背景一緒 　背景アタッチメントで文字だけスクロールされる　↓からは別背景-->
@@ -131,6 +138,19 @@
         <script>
             $(function(){
 
+                var pos1 = 30;
+                var pos2 = 20;
+                var pos3 = 10;
+                var pos4 = 60;
+                var pos5 = 100;
+                var pos6 = 50;
+                var pos7 = 80;
+
+                var windowWidth = $(window).width();
+
+                
+
+
                 $(window).scroll(function () {
 
                     var scroll = $(this).scrollTop();
@@ -145,6 +165,26 @@
                 } else {
                     $('header nav').css('top','-100px');
                 }
+
+                if( pos1 + scroll > windowWidth) {
+                    $('#tag1').css('right',pos1 + scroll - windowWidth);
+
+                } else {
+                    $('#tag1').css('right',pos1 + scroll);
+                }
+
+                if (pos2 + scroll > windowWidth) {
+                    $('#tag2').css('right',pos2   - windowWidth + scroll /3);
+                } else {
+                    $('#tag2').css('right',pos2 + scroll /3);
+                }
+
+                // if (pos3 + scroll > windowWidth) {
+                //     $('#tag3').css('right',pos3 + scroll - windowWidth);
+                // } else {
+                //     $('#tag3').css('right',pos3 + scroll);
+                // }
+
 
                 });                
 

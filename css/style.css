@@ -111,8 +111,35 @@ header a {
 
 #about {
     background: #333;
-
 }
+
+.section-about-inner {
+    position: relative;
+    height: 500px;
+}
+
+
+.tag {
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    right:0;
+    opacity: 0.7;
+    color: #ebdc62;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+#tag1 {top: 10px; color: #fff; font-size: 40px}
+#tag2 {top: 40px; color: #ebdc62;}
+#tag3 {top: 80px; color: #ddd;}
+#tag4 {top: 120px;color: #ebdc62;font-size: 60px}
+#tag5 {top: 160px;color: #fff;}
+#tag6 {top: 220px;color: #eee;font-size: 25px}
+#tag7 {top: 290px;color: #fff;}
+
+
+
 
 
 #work {
