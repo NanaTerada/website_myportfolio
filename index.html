@@ -10,7 +10,7 @@
     </head>
     <body>
         
-        <header class="parent">
+        <header>
             <nav>
                 <ul>
                     <li><a href="#top">top</a></li>
@@ -30,7 +30,7 @@
                 <div class="section-top-inner">
                     <h1 class="title">WIP<span>__work in progress</span></h1>
 
-                    <div class="img-wapper children"><img src="images/img-top.jpg"></div>
+                    <div class="img-wapper"><img src="images/img-top.jpg"></div>
                     <div>キャッチコピーてきな一言</div>
                 </div>
             </section>
@@ -126,9 +126,24 @@
 
         <script>
             $(function(){
-                // var h = $('.children').height(); 
-                //         $('.parent').height(h); 
-                //         alert(h);//高さ確認用アラート 
+
+                $(window).scroll(function () {
+
+                    var scroll = $(this).scrollTop();
+                    var height =$(this).height();
+
+                    console.log(scroll);
+                    console.log(height);
+
+                    if (scroll >= height) {
+                    $('header nav').css('top','0px');
+                    //alert(scroll);
+                } else {
+                    $('header nav').css('top','-100px');
+                }
+
+                });                
+
             });
         </script>
         
