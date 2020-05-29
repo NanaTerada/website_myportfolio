@@ -194,6 +194,7 @@ header a {
     width: 1000px;
     margin: 0 auto;
     text-align: center;
+    padding-bottom: 200px;
 }
 
 .work-img-wrapper {
@@ -201,6 +202,7 @@ header a {
     height: 500px;
     overflow: hidden;
     margin: 0 auto;
+    margin-bottom: 100px;
 }
 
 .site-title {
