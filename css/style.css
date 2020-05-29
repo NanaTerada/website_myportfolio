@@ -263,6 +263,17 @@ footer {
     width:750px ;
 }
 
+.section-top-inner {
+    animation:none;
+}
+
+.title {
+   
+    animation: fadein-title 0.5s ease-in;
+
+}
+
+
 
 
 
