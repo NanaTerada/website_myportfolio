@@ -289,6 +289,67 @@ footer {
 
 
 
+
+/* single-page */
+.single-blog-top {
+    position: relative;
+    height: 300px;
+}
+
+.single-blog-img-wrapper {
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+
+    width: 600px;
+    height: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+
+.single-blog-bg-img-wrapper {
+    position: absolute;
+
+    width: 100%;
+    height: 300px;
+
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.single-blog-txt {
+    padding-bottom: 100px;
+}
+
+.single-sec-title {
+    position: absolute;
+}
+
+.blog--prev-next {
+    margin: 0 auto;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:50px ;
+}
+
+.blog-next {
+    width: 300px;
+    background: #eee;
+    text-align: center;
+    padding: 5px;
+}
+
+.blog-prev-next-wrapper {
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
 @media screen and (max-width: 980px) { 
     body {
         color:#ebdc62;
